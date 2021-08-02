@@ -8,7 +8,7 @@ if($_SESSION["session_nombre"]){
 
 function leerArchivo(){
     //obtener el idiamo 
-    $lang="en"
+    $lang="en";
     if(isset($_GET["lang"])){
         $lang=$_GET["lang"];
         setcookie("cookie_idioma", $lang, time() + 60*60*24);
@@ -18,7 +18,7 @@ function leerArchivo(){
         }
     }
     
-    $titulo = ($lang==="en") "<h2> Product List </h2>": "<h2> Lista de productos </h2>"
+    echo $titulo = ($lang==="en")? "<h2>Product List</h2>":"<h2>Lista de Productos</h2>";
     
     //leer el fichero
     $file = ($lang==="en")?"categorias_en.txt":"categorias_es.txt";
@@ -48,7 +48,7 @@ function leerArchivo(){
     <p>
         Bienveido usuario <?php echo $nombre; ?>
     </p>
-    <a href="">Salir</a><br>
+    <a href="cerrar_Sesion.php">Salir</a><br>
 
     <a href="panel_principal.php?lang=es">ES (español)</a> | <a href="panel_principal.php?lang=en">EN (english)</a>
 

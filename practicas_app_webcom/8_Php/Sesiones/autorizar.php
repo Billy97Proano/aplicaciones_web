@@ -17,7 +17,7 @@
             setcookie("cookie_clave", $clave, time() + 60*60*24);
         }else{
             if(isset($_COOKIE)){
-                foreach($_COOKIE as $name => value){
+                foreach($_COOKIE as $name->value){
                     setcookie($name,'', 1);
                 }
             }
