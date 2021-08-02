@@ -1,0 +1,84 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Agenda">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="contacto" minOccurs="1"
+					maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="contacto" type="contactoTipo" />
+	<xsd:complexType name="contactoTipo">
+		<xsd:sequence>
+			<xsd:element ref="fotografia" />
+			<xsd:element ref="titulo" />
+			<xsd:element ref="nombre" />
+			<xsd:element ref="apellido" />
+			<xsd:element ref="paginaWeb" />
+			<xsd:element ref="cumpleanios" />
+			<xsd:element ref="direccion" />
+			<xsd:element ref="empresa" />
+			<xsd:element ref="telefono" />
+			<xsd:element ref="localizacion" />
+			<xsd:element ref="tonos" />
+		</xsd:sequence>
+		<xsd:attribute ref="id" />
+	</xsd:complexType>
+
+	<xsd:element name="empresa">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="nombreEmpresa" />
+				<xsd:element ref="tipoEmpresa" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="localizacion">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="pais" />
+				<xsd:element ref="ciudad" />
+				<xsd:element ref="geolocalizacion" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:element name="tonos">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="tonoMensaje" />
+				<xsd:element ref="tonoLlamada" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+		<xsd:attribute name="id">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:integer">
+				<xsd:minInclusive value="1" />
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+	
+	<xsd:element name="fotografia" type="xsd:string" />
+	<xsd:element name="titulo" type="xsd:string" />
+	<xsd:element name="nombre" type="xsd:string" />
+	<xsd:element name="apellido" type="xsd:string" />
+	<xsd:element name="paginaWeb" type="xsd:string" />
+	<xsd:element name="cumpleanios" type="xsd:string" />
+	<xsd:element name="direccion" type="xsd:string" />
+	<xsd:element name="nombreEmpresa" type="xsd:string" />
+	<xsd:element name="tipoEmpresa" type="xsd:string" />
+	<xsd:element name="telefono" type="xsd:string" />
+	<xsd:element name="pais" type="xsd:string" />
+	<xsd:element name="ciudad" type="xsd:string" />
+	<xsd:element name="geolocalizacion" type="xsd:string" />
+	<xsd:element name="tonoMensaje" type="xsd:string" />
+	<xsd:element name="tonoLlamada" type="xsd:string" />
+	
+
+</xsd:schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Agenda (contacto+)>
+<!ELEMENT contacto (fotografia, titulo, nombre, apellido, paginaWeb, cumpleanios, direccion, empresa, telefono, localizacion, tonos)>
+<!ELEMENT fotografia (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT paginaWeb (#PCDATA)>
+<!ELEMENT cumpleanios (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT empresa (nombreEmpresa, tipoEmpresa)>
+<!ELEMENT nombreEmpresa (#PCDATA)>
+<!ELEMENT tipoEmpresa (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT localizacion (pais,ciudad,geolocalizacion)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT geolocalizacion (#PCDATA)>
+<!ELEMENT tonos (tonoMensaje, tonoLlamada)>
+<!ELEMENT tonoMensaje (#PCDATA)>
+<!ELEMENT tonoLlamada (#PCDATA)>
+
+<!ATTLIST contacto id CDATA #REQUIRED>

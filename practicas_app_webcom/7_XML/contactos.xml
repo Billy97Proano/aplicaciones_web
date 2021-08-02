@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="agenda.xsd">
+
+	<contacto id="1">
+		<fotografia>www.fotos.com/miFoto.png</fotografia>
+		<titulo>Contacto 1</titulo>
+		<nombre>Jose</nombre>
+		<apellido>Jimenez</apellido>
+		<paginaWeb>wwww.josejimenes.com</paginaWeb>
+		<cumpleanios>23/07</cumpleanios>
+		<direccion>Calderon</direccion>
+		<empresa>
+			<nombreEmpresa>Claro</nombreEmpresa>
+			<tipoEmpresa>Privada</tipoEmpresa>
+		</empresa>
+		<telefono>0984871823</telefono>		
+		<localizacion>
+			<pais>Ecuador</pais>
+			<ciudad>Quito</ciudad>
+			<geolocalizacion>-0.101495,-78.478121</geolocalizacion>
+		</localizacion>
+		<tonos>
+			<tonoMensaje>TonoMensaje1</tonoMensaje>
+			<tonoLlamada>TonoLlamada1</tonoLlamada>
+		</tonos>
+	</contacto>
+
+    <contacto id="2">
+		<fotografia>www.fotos.com/miFoto1.png</fotografia>
+		<titulo>Contacto 2</titulo>
+		<nombre>Cristian</nombre>
+		<apellido>Campos</apellido>
+		<paginaWeb>wwww.cristiancampos.com</paginaWeb>
+		<cumpleanios>01/10</cumpleanios>
+		<direccion>Condado</direccion>
+		<empresa>
+			<nombreEmpresa>Ministerio de Salud Publica</nombreEmpresa>
+			<tipoEmpresa>Publica</tipoEmpresa>
+		</empresa>
+		<telefono>0983333483</telefono>		
+		<localizacion>
+			<pais>Ecuador</pais>
+			<ciudad>Quito</ciudad>
+			<geolocalizacion>-0.1021813,-78.5254671</geolocalizacion>
+		</localizacion>
+		<tonos>
+			<tonoMensaje>tonoMensaje2</tonoMensaje>
+			<tonoLlamada>tonoLlamada2</tonoLlamada>
+		</tonos>
+	</contacto>
+
+</Agenda>

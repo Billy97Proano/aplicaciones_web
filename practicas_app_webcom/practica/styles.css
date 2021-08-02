@@ -1,0 +1,141 @@
+
+/*--------- SECCION 1 ---------------*/
+header{height:250px;background-image: url(../img/sombra_03.png);}
+#enlaces{ width:100%;height: 50px;text-align: center;}
+#enlaces ul{list-style-type: none; text-align: center;margin:0;padding-top:15px;}
+#enlaces li{display: inline-block;width:20%;}
+body{font-family:Arial, Helvetica, sans-serif;margin:auto;}
+.colorweb{ background: #0071bc;}
+a{color:white; text-decoration: none;}
+
+/*--------- SECCION 2 ---------------*/
+/* Generales */
+.flotar_iz{float:left}
+.flotar_der{float:right}
+
+
+/*LOGO*/
+@font-face{
+    font-family:pepito;
+    font-style:normal;
+    font-weight:normal;
+    src:url(../fonts/new_zelek_[allfont.es].ttf);
+}
+
+/* conteedor buscar */
+
+
+#logo{
+    height: 56px;
+    width:380px;
+    font-family: pepito;
+    color:white;
+    text-align: center;
+    padding: 12px 0 0 0;
+    margin:5px 5px 0 20px;
+    font-size: 30px;
+}
+/*texto buscar*/
+.input_buscar{
+    width:500px;
+    height:64px;
+    font-size:1.9rem;
+    background:#edeff1;
+    border: 1px solid #d4d7d9;
+    margin:4px 0 0 0;
+    padding: 11px 50px 11px 15px;
+    text-transform: uppercase;
+    color: #575859;
+    border-radius: 2px 0 0 2px;
+    line-height: 26px;
+    box-sizing: border-box;
+}
+
+/*Iconos*/
+.icono{ width:72px; height: 56px; padding-top: 10px;}
+.icono span{font-size:14px; display: block; text-align: center;}
+
+#borde_buscar{
+    border: 1px solid #dddd; 
+    height: 64px;
+    margin: 4px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+/*--------- SECCION 3 ---------------*/
+/** NAV **/
+nav{ clear:both; padding-top: 15px;}
+nav ul.menu{ list-style-type:none; text-align: center;}
+ul.menu li{ display: inline-block; width: 22%;}
+ul.menu li a{color:#666666;display: block;}
+
+/* SECCION 4 */
+
+#mapa-mundi{
+    background-image: url(../img/mapamundi.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -40px;
+}
+
+/* SECCION 5 */
+
+#nuestros-proyectos{
+    background-color: #000;
+    height: 450px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -25px;
+}
+
+#nuestros-proyectos h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+#nuestros-proyectos h1, h2{
+    color: #dddddd;
+}
+
+#nuestros-proyectos img{
+    width: 300px;
+    height: 200px;   
+}
+.secciones{
+    padding-left: 50px;
+    text-align: center;
+}
+
+#nuestros-proyectos .secciones{
+    width: 32%;
+    height: 340px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+/* SECCION 6 */ 
+#footer{
+    margin-top: -19px;
+    padding-bottom: 30px;
+}
+
+#footer h3, p{
+    text-align: center;
+    color: #dddddd;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+#footer h3{
+    padding-top: 40px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border: 1px solid #000;
+        }
+
+        th,
+        td {
+            width: 25%;
+            text-align: left;
+            vertical-align: top;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 0.3em;
+            caption-side: bottom;
+        }
+
+        caption {
+            padding: 0.3em;
+            color: #fff;
+            background: #000;
+        }
+
+        th {
+            background: #eee;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <fieldset>
+        <table>
+            <caption>Catálogo de Controles de Fomrulario HTML</caption>
+            <tr>
+                <th>Nombre</th>
+                <th>Visualización</th>
+                <th>Código</th>
+            </tr>
+            <tr>
+                <td>input submit</td>
+                <td style="text-align: center;"> <input type="submit" value="Submit"></td>
+                <td> &lt;input type="submit" value="Enviar"&gt; </td>
+            </tr>
+            <tr>
+                <td>input text</td>
+                <td style="text-align: center;"> <input type="text" name="texto1"></td>
+                <td> &lt;input type="text" name="texto1"&gt; </td>
+            </tr>
+            <tr>
+                <td>input password</td>
+                <td style="text-align: center;"> <input type="password" name="password1"></td>
+                <td> &lt;input type="password" name="password1"&gt; </td>
+            </tr>
+            <tr>
+                <td>input button</td>
+                <td style="text-align: center;"> <input type="button" name="boton1" value="boton"></td>
+                <td> &lt;input type="button" name="boton1" value="boton"&gt; </td>
+            </tr>
+
+            <tr>
+                <td>input date</td>
+                <td style="text-align: center;"> <input type="date" name="date1"></td>
+                <td> &lt;input type="date" name="date1"&gt; </td>
+            </tr>
+            <tr>
+                <td>input number</td>
+                <td style="text-align: center;"> <input type="number" name="number1"></td>
+                <td> &lt;input type="number" name="number1"&gt; </td>
+            </tr>
+            <tr>
+                <td>input range</td>
+                <td style="text-align: center;"> <input type="range" name="range1"></td>
+                <td> &lt;input type="range" name="range1"&gt; </td>
+            </tr>
+            <tr>
+                <td>input color</td>
+                <td style="text-align: center;"> <input type="color" name="color1"></td>
+                <td> &lt;input type="color" name="color1"&gt; </td>
+            </tr>
+            <tr>
+                <td>input hidden</td>
+                <td style="text-align: center;"> <input type="hidden" name="hiddem1"></td>
+                <td> &lt;input type="hidden" name="hiddem1"&gt; </td>
+            </tr>
+            <tr>
+                <td>input checkbox</td>
+                <td style="text-align: center;"> <input type="checkbox" name="checkbox1"></td>
+                <td> &lt;input type="checkbox" name="checkbox1"&gt; </td>
+            </tr>
+            <tr>
+                <td>input radio</td>
+                <td style="text-align: center;"> <input type="radio" name="radio1" id="hombre"> <label for="hombre">
+                        Hombre</label> <input type="radio" name="radio1" id="mujer"> <label for="mujer">
+                        Mujer</label></td>
+                <td> &lt;input type="radio" name="radio1" id="hombre"&gt; &lt;label for="hombre"&gt; Hombre
+                    &lt;/label&gt; &lt;input type="radio" name="radio1" id="mujer"&gt; &lt;label for="mujer"&gt; Mujer
+                    &lt;/label&gt;</td>
+            </tr>
+            <tr>
+                <td> select </td>
+                <td  style="text-align: center;"> <select name="select1" id="valores">
+                    <option value="valor1">valor1</option>
+                    <option value="valor2">valor2</option>
+                    <option value="valor3">valor3</option>
+                </select></td>
+                <td>
+                    &lt;select name="select1" id="valores"&gt;
+                    &lt;option value="valor1"&gt; valor1  &lt;/option&gt;
+                    &lt;option value="valor2"&gt; valor2  &lt;/option&gt;
+                    &lt;option value="valor3"&gt; valor3  &lt;/option&gt;
+                </td>
+            </tr>
+            <tr>
+                <td> select multiple</td>
+                <td  style="text-align: center;"> <select name="select1" id="valores" multiple>
+                    <option value="valor1">valor1</option>
+                    <option value="valor2">valor2</option>
+                    <option value="valor3">valor3</option>
+                </select></td>
+                <td>
+                    &lt;select name="select1" id="valores"&gt;
+                    &lt;option value="valor1"&gt; valor1  &lt;/option&gt;
+                    &lt;option value="valor2"&gt; valor2  &lt;/option&gt;
+                    &lt;option value="valor3"&gt; valor3  &lt;/option&gt;
+                </td>
+            </tr>
+
+            <tr>
+                <td>text area</td>
+                <td style="text-align: center;"> <textarea name="textare1" id="textare" cols="40" rows="10"></textarea></td>
+                <td>&lt;textarea name="textare1" id="textare" cols="20" rows="10"&gt; &lt;/textarea&gt;</td>
+            </tr>
+            <tr>
+                <td>Button</td>
+                <td style="text-align: center;"> <button>BOTÓN</button></td>
+                <td>
+                    &lt;button&gt;BOTÓN
+                    &lt;/button&gt;
+                </td>
+            </tr>
+
+
+        </table>
+    </fieldset>
+
+
+</body>
+
+</html>
