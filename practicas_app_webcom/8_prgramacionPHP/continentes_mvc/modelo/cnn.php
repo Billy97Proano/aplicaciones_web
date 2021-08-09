@@ -14,6 +14,9 @@
             return $conexion;
         }
 
+        public static function cerrar ( $cnn){
+            $cnn->close();
+        }
     }
 
 ?>

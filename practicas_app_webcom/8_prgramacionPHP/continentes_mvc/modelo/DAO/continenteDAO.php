@@ -17,7 +17,6 @@
             $stament = $conexion->prepare(self::SQL_CONSULT);
             $stament->execute();
             $result = $stament->get_result();
-
             if($result){
                 while($row = $result->fetch_assoc()){
                     array_push($continentesArray, $row); 
@@ -26,7 +25,7 @@
 
             $stament->close();
             $result->free();
-            $conexion->close();
+            ConexionBDD::cerrar($conexion);
 
             return $continentesArray;
 
