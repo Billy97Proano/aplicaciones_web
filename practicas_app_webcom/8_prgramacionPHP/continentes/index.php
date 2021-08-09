@@ -10,7 +10,8 @@
     
 
     <?php
-        include_once("cnn.php");
+
+        include("cnn.php");
 
         $sql = "SELECT CONT_ID, CONT_NOMBRE FROM CONTINENTE";
         $stament = $conexion->prepare($sql);
@@ -18,11 +19,14 @@
         $result = $stament->get_result();
         $numeroFilas = $result->num_rows;
         if($numeroFilas>0){
-            while($row = $result->fetch_assoc()){
-                echo "<br>" ."<a href='pais_vista.php'>" . $row['CONT_NOMBRE']. "</a>". "<br>"; 
+            echo "<ul>";
+            while($continente = $result->fetch_assoc()){
+                echo '<li><a href="paises.php?idContinente='. $continente['CONT_ID'].'">'.$continente["CONT_NOMBRE"] . '</a></li>' .'<br>';
             }
+            echo "</ul>";
         }
-        
+        $stament->close();
+        $conexion-> close();
     
     ?>
 
