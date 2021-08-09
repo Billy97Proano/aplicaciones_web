@@ -1,8 +1,8 @@
 <?php
 
 if(isset($_POST)){
-    $idContinente = $_POST["txtIDContinente"];
-    $nombreContinte = $_POST["txtNombre"];
+    $idContinente = $_POST["txtIdContinente"];
+    $nombreContinte = $_POST["txtpais"];
 
     include("cnn.php");
     $sql="INSERT INTO PAIS (PAIS_NOMBRE, CONT_ID) VALUES (?,?)";
@@ -15,7 +15,7 @@ if(isset($_POST)){
     if($resultado){
         header("Location:paises.php?idContinente=".$idContinente);
     }else{
-        die("Error al insertat ");
+        die("Error al insertar");
     }
 }
 

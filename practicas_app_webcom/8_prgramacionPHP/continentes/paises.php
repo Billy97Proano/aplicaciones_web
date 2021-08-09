@@ -31,36 +31,34 @@ if(isset($_GET)){
         $stament->close();
         //$conexion->close();
 
-        //LISTAR PAISES 
-        $sql = "SELECT PAIS_NOMBRE FROM PAIS WHERE CONT_ID=?";
-        $stmt = $conexion->prepare($sql);
-        $stmt->bind_param("i", $idContinente);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $numeroFilas = $result->num_rows;
-        
-
- 
     ?>
 
     <h1> PAISES DE <?php echo $continente[1]; ?> </h1>
 
-    <p> <a href="index.php"> Regresar al Continente</a> | <a href="pais_vista.php">Crear Paìs</a></p>
-    <table>
+    <p> <a href="index.php"> Regresar al Continente</a> | <a href="pais_vista.php?continente=<?php echo $idContinente;?>">Crear Paìs</a></p>
+    <table border=1>
         <tr>
             <th> Paìs </th>
             <th> Opciones </th>
         </tr>
-        <?php if($numeroFilas>0){
+        <?php
+            //LISTAR PAISES 
+            $sql = "SELECT PAIS_ID ,PAIS_NOMBRE, CONT_ID FROM PAIS WHERE CONT_ID=?";
+            $stmt = $conexion->prepare($sql);
+            $stmt->bind_param("i", $idContinente);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $numeroFilas = $result->num_rows;
+            if($numeroFilas>0){
                 while($row = $result->fetch_assoc()){
-                    echo '<tr> <td>' .$row['PAIS_NOMBRE']. '<br>' . '</td> <td> Actalizar | Eliminar </td> </tr> ';
-                    }
+                    echo '<tr> <td>' .$row['PAIS_NOMBRE']. '<br>' . '</td> <td> Actalizar | <a href="pais_eliminar.php?idpais='.$row['PAIS_ID'].'&continenteid='.$row ['CONT_ID'].'">Elimimar</a> </td> </tr> ';
                 }
-                $stmt->close();
-                $conexion->close(); ?>
+            }
+            $stmt->close();
+            $conexion->close(); 
+        ?>
 
     </table>
-
 
 </body>
 </html>
