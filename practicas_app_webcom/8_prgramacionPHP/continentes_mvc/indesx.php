@@ -8,8 +8,10 @@
 </head>
 <body>
     
-    <h1> MI INDEX </h1>
-    
+
+    <?php
+        header("Location:controlador/continentes_listar_controler.php");
+    ?>
 
 </body>
 </html>
